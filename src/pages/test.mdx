@@ -1,0 +1,14 @@
+export default ({children, ...props}) => (
+  <div className="my custom layout">
+    <div>{children}</div>
+    <pre>{JSON.stringify(props, null, 2)}</pre>
+  </div>
+)
+
+# A title
+
+Some content
+
+import BoldItalic from '../components/test';
+
+<BoldItalic>test</BoldItalic>
